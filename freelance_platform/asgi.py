@@ -5,8 +5,6 @@ from channels.auth import AuthMiddlewareStack
 import messaging.routing
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'freelance_platform.settings')
-application = get_asgi_application()
-app=application
 
 application = ProtocolTypeRouter({
     "http": get_asgi_application(),
