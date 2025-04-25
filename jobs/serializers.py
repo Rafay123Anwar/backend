@@ -27,6 +27,8 @@
 #     def create(self, validated_data):
 #         validated_data['client'] = self.context['request'].user
 #         return super().create(validated_data)
+
+
 from rest_framework import serializers
 from .models import Category, Job
 
